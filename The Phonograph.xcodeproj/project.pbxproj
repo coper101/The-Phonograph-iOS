@@ -7,18 +7,67 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27D32CFF287D9D850061DB35 /* CDInCaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D32CFE287D9D850061DB35 /* CDInCaseView.swift */; };
+		27D32D01287EF5250061DB35 /* PlayOrPauseButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D32D00287EF5250061DB35 /* PlayOrPauseButtonView.swift */; };
+		27D32D03287EF7030061DB35 /* TopCDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D32D02287EF7030061DB35 /* TopCDView.swift */; };
+		27D32D052882558C0061DB35 /* TopSongsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D32D042882558C0061DB35 /* TopSongsListView.swift */; };
+		27D32D07288255B00061DB35 /* SongsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D32D06288255B00061DB35 /* SongsListView.swift */; };
+		27D32D09288256310061DB35 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D32D08288256310061DB35 /* TestData.swift */; };
+		27D32D0B288264C80061DB35 /* BottomBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D32D0A288264C80061DB35 /* BottomBarView.swift */; };
+		27D32D0F28827D8D0061DB35 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D32D0E28827D8D0061DB35 /* PlayerView.swift */; };
+		27D32D112882A4A60061DB35 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D32D102882A4A60061DB35 /* AppState.swift */; };
+		27D32D132882B7190061DB35 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27D32D122882B7190061DB35 /* Launch Screen.storyboard */; };
+		27D32D17288305180061DB35 /* Numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D32D16288305180061DB35 /* Numbers.swift */; };
+		27D32D1928830AD30061DB35 /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D32D1828830AD30061DB35 /* Stopwatch.swift */; };
 		27FDABB6287C3E1B00E7747B /* The_PhonographApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FDABB5287C3E1B00E7747B /* The_PhonographApp.swift */; };
-		27FDABB8287C3E1B00E7747B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FDABB7287C3E1B00E7747B /* ContentView.swift */; };
 		27FDABBA287C3E1D00E7747B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27FDABB9287C3E1D00E7747B /* Assets.xcassets */; };
 		27FDABBD287C3E1D00E7747B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27FDABBC287C3E1D00E7747B /* Preview Assets.xcassets */; };
+		27FDABC4287C3F4600E7747B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FDABC3287C3F4600E7747B /* HomeView.swift */; };
+		27FDABC7287C3F6E00E7747B /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FDABC6287C3F6E00E7747B /* AppView.swift */; };
+		27FDABCB287C3FF000E7747B /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FDABCA287C3FF000E7747B /* Styles.swift */; };
+		27FDABCF287C40A000E7747B /* DMSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27FDABCE287C40A000E7747B /* DMSans-Bold.ttf */; };
+		27FDABD2287C414500E7747B /* TopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FDABD1287C414500E7747B /* TopBarView.swift */; };
+		27FDABD4287C484500E7747B /* Dimensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FDABD3287C484500E7747B /* Dimensions.swift */; };
+		27FDABD6287C48D200E7747B /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FDABD5287C48D200E7747B /* HeaderView.swift */; };
+		27FDABD8287C4A1A00E7747B /* CDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FDABD7287C4A1A00E7747B /* CDView.swift */; };
+		27FDABDA287D93D100E7747B /* DonutShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FDABD9287D93D100E7747B /* DonutShapeView.swift */; };
+		27FDABDC287D981300E7747B /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FDABDB287D981300E7747B /* Song.swift */; };
+		27FDABDE287D99A400E7747B /* Songs.json in Resources */ = {isa = PBXBuildFile; fileRef = 27FDABDD287D99A400E7747B /* Songs.json */; };
+		27FDABE0287D9A1700E7747B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FDABDF287D9A1700E7747B /* Utils.swift */; };
+		27FDABE2287D9ABB00E7747B /* SongModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FDABE1287D9ABB00E7747B /* SongModelData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27D32CFE287D9D850061DB35 /* CDInCaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDInCaseView.swift; sourceTree = "<group>"; };
+		27D32D00287EF5250061DB35 /* PlayOrPauseButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayOrPauseButtonView.swift; sourceTree = "<group>"; };
+		27D32D02287EF7030061DB35 /* TopCDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCDView.swift; sourceTree = "<group>"; };
+		27D32D042882558C0061DB35 /* TopSongsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopSongsListView.swift; sourceTree = "<group>"; };
+		27D32D06288255B00061DB35 /* SongsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsListView.swift; sourceTree = "<group>"; };
+		27D32D08288256310061DB35 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
+		27D32D0A288264C80061DB35 /* BottomBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBarView.swift; sourceTree = "<group>"; };
+		27D32D0E28827D8D0061DB35 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		27D32D102882A4A60061DB35 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		27D32D122882B7190061DB35 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		27D32D16288305180061DB35 /* Numbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Numbers.swift; sourceTree = "<group>"; };
+		27D32D1828830AD30061DB35 /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
 		27FDABB2287C3E1B00E7747B /* The Phonograph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Phonograph.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27FDABB5287C3E1B00E7747B /* The_PhonographApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_PhonographApp.swift; sourceTree = "<group>"; };
-		27FDABB7287C3E1B00E7747B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		27FDABB9287C3E1D00E7747B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27FDABBC287C3E1D00E7747B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		27FDABC3287C3F4600E7747B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		27FDABC6287C3F6E00E7747B /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		27FDABCA287C3FF000E7747B /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		27FDABCE287C40A000E7747B /* DMSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-Bold.ttf"; sourceTree = "<group>"; };
+		27FDABD0287C40B400E7747B /* The-Phonograph-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "The-Phonograph-Info.plist"; sourceTree = SOURCE_ROOT; };
+		27FDABD1287C414500E7747B /* TopBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarView.swift; sourceTree = "<group>"; };
+		27FDABD3287C484500E7747B /* Dimensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dimensions.swift; sourceTree = "<group>"; };
+		27FDABD5287C48D200E7747B /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		27FDABD7287C4A1A00E7747B /* CDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDView.swift; sourceTree = "<group>"; };
+		27FDABD9287D93D100E7747B /* DonutShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonutShapeView.swift; sourceTree = "<group>"; };
+		27FDABDB287D981300E7747B /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		27FDABDD287D99A400E7747B /* Songs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Songs.json; sourceTree = "<group>"; };
+		27FDABDF287D9A1700E7747B /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		27FDABE1287D9ABB00E7747B /* SongModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongModelData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,9 +81,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27D32CFD287D9D770061DB35 /* CD */ = {
+			isa = PBXGroup;
+			children = (
+				27FDABD7287C4A1A00E7747B /* CDView.swift */,
+				27FDABD9287D93D100E7747B /* DonutShapeView.swift */,
+				27D32CFE287D9D850061DB35 /* CDInCaseView.swift */,
+				27D32D00287EF5250061DB35 /* PlayOrPauseButtonView.swift */,
+				27D32D02287EF7030061DB35 /* TopCDView.swift */,
+			);
+			path = CD;
+			sourceTree = "<group>";
+		};
+		27D32D0C28827D680061DB35 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				27FDABC3287C3F4600E7747B /* HomeView.swift */,
+				27FDABD1287C414500E7747B /* TopBarView.swift */,
+				27D32D0A288264C80061DB35 /* BottomBarView.swift */,
+				27FDABD5287C48D200E7747B /* HeaderView.swift */,
+				27D32D042882558C0061DB35 /* TopSongsListView.swift */,
+				27D32D06288255B00061DB35 /* SongsListView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		27D32D0D28827D780061DB35 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				27D32D0E28827D8D0061DB35 /* PlayerView.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
 		27FDABA9287C3E1B00E7747B = {
 			isa = PBXGroup;
 			children = (
+				27D32D122882B7190061DB35 /* Launch Screen.storyboard */,
 				27FDABB4287C3E1B00E7747B /* The Phonograph */,
 				27FDABB3287C3E1B00E7747B /* Products */,
 			);
@@ -51,9 +134,12 @@
 		27FDABB4287C3E1B00E7747B /* The Phonograph */ = {
 			isa = PBXGroup;
 			children = (
+				27FDABD0287C40B400E7747B /* The-Phonograph-Info.plist */,
 				27FDABB5287C3E1B00E7747B /* The_PhonographApp.swift */,
-				27FDABB7287C3E1B00E7747B /* ContentView.swift */,
-				27FDABB9287C3E1D00E7747B /* Assets.xcassets */,
+				27FDABC5287C3F5000E7747B /* Views */,
+				27FDABC8287C3F7A00E7747B /* Model */,
+				27FDABC9287C3FE300E7747B /* Utils */,
+				27FDABCD287C403800E7747B /* Assets */,
 				27FDABBB287C3E1D00E7747B /* Preview Content */,
 			);
 			path = "The Phonograph";
@@ -63,8 +149,60 @@
 			isa = PBXGroup;
 			children = (
 				27FDABBC287C3E1D00E7747B /* Preview Assets.xcassets */,
+				27D32D08288256310061DB35 /* TestData.swift */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		27FDABC5287C3F5000E7747B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				27FDABC6287C3F6E00E7747B /* AppView.swift */,
+				27D32D0D28827D780061DB35 /* Player */,
+				27D32D0C28827D680061DB35 /* Home */,
+				27D32CFD287D9D770061DB35 /* CD */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		27FDABC8287C3F7A00E7747B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				27FDABDB287D981300E7747B /* Song.swift */,
+				27FDABDD287D99A400E7747B /* Songs.json */,
+				27FDABE1287D9ABB00E7747B /* SongModelData.swift */,
+				27D32D102882A4A60061DB35 /* AppState.swift */,
+				27D32D1828830AD30061DB35 /* Stopwatch.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		27FDABC9287C3FE300E7747B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				27FDABCA287C3FF000E7747B /* Styles.swift */,
+				27FDABD3287C484500E7747B /* Dimensions.swift */,
+				27FDABDF287D9A1700E7747B /* Utils.swift */,
+				27D32D16288305180061DB35 /* Numbers.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		27FDABCC287C402E00E7747B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				27FDABCE287C40A000E7747B /* DMSans-Bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		27FDABCD287C403800E7747B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				27FDABCC287C402E00E7747B /* Fonts */,
+				27FDABB9287C3E1D00E7747B /* Assets.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +263,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27FDABDE287D99A400E7747B /* Songs.json in Resources */,
 				27FDABBD287C3E1D00E7747B /* Preview Assets.xcassets in Resources */,
+				27FDABCF287C40A000E7747B /* DMSans-Bold.ttf in Resources */,
+				27D32D132882B7190061DB35 /* Launch Screen.storyboard in Resources */,
 				27FDABBA287C3E1D00E7747B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +278,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27FDABB8287C3E1B00E7747B /* ContentView.swift in Sources */,
+				27D32D1928830AD30061DB35 /* Stopwatch.swift in Sources */,
+				27FDABDA287D93D100E7747B /* DonutShapeView.swift in Sources */,
+				27FDABD2287C414500E7747B /* TopBarView.swift in Sources */,
+				27FDABD8287C4A1A00E7747B /* CDView.swift in Sources */,
+				27D32D0F28827D8D0061DB35 /* PlayerView.swift in Sources */,
+				27FDABC4287C3F4600E7747B /* HomeView.swift in Sources */,
+				27D32D17288305180061DB35 /* Numbers.swift in Sources */,
+				27D32D0B288264C80061DB35 /* BottomBarView.swift in Sources */,
+				27D32D01287EF5250061DB35 /* PlayOrPauseButtonView.swift in Sources */,
+				27FDABDC287D981300E7747B /* Song.swift in Sources */,
+				27FDABD4287C484500E7747B /* Dimensions.swift in Sources */,
+				27D32D112882A4A60061DB35 /* AppState.swift in Sources */,
+				27D32D052882558C0061DB35 /* TopSongsListView.swift in Sources */,
+				27D32CFF287D9D850061DB35 /* CDInCaseView.swift in Sources */,
+				27D32D09288256310061DB35 /* TestData.swift in Sources */,
 				27FDABB6287C3E1B00E7747B /* The_PhonographApp.swift in Sources */,
+				27FDABE0287D9A1700E7747B /* Utils.swift in Sources */,
+				27FDABE2287D9ABB00E7747B /* SongModelData.swift in Sources */,
+				27D32D03287EF7030061DB35 /* TopCDView.swift in Sources */,
+				27FDABC7287C3F6E00E7747B /* AppView.swift in Sources */,
+				27FDABCB287C3FF000E7747B /* Styles.swift in Sources */,
+				27D32D07288255B00061DB35 /* SongsListView.swift in Sources */,
+				27FDABD6287C48D200E7747B /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,9 +434,13 @@
 				DEVELOPMENT_TEAM = KB9D3Y7M29;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "The-Phonograph-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "The Phonograph";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -301,9 +467,13 @@
 				DEVELOPMENT_TEAM = KB9D3Y7M29;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "The-Phonograph-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "The Phonograph";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

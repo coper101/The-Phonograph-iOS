@@ -1,0 +1,83 @@
+[
+    {
+        "id": "1",
+        "title" : "As It Was",
+        "singer" : "Harry Styles",
+        "albumArtName": "AsItWas",
+        "rankNumber": 1,
+        "lastPosDiff": 2,
+        "duration": 120
+    },
+    {
+        "id": "2",
+        "title" : "About Damn Time",
+        "singer" : "Lizzo",
+        "albumArtName": "AboutDamnTime",
+        "rankNumber": 2,
+        "lastPosDiff": -1,
+        "duration": 120
+    },
+    {
+        "id": "3",
+        "title" : "Glimpe Of Us",
+        "singer" : "Future",
+        "albumArtName": "GlimpseOfUs",
+        "rankNumber": 3,
+        "lastPosDiff": -2,
+        "duration": 120
+    },
+    {
+        "id": "4",
+        "title" : "Light Switch",
+        "singer" : "Charlie Switch",
+        "albumArtName": "LightSwitch",
+        "rankNumber": 4,
+        "lastPosDiff": -1,
+        "duration": 120
+    },
+    {
+        "id": "5",
+        "title" : "Left and Right",
+        "singer" : "Charlie Puth, Jungkook",
+        "albumArtName": "LeftAndRight",
+        "rankNumber": 5,
+        "lastPosDiff": -2,
+        "duration": 120
+    },
+    {
+        "id": "6",
+        "title" : "Hounds of Love",
+        "singer" : "Kate Bush",
+        "albumArtName": "HoundsOfLove",
+        "rankNumber": 6,
+        "lastPosDiff": -4,
+        "duration": 120
+    },
+    {
+        "id": "7",
+        "title" : "Love Dive",
+        "singer" : "Ive",
+        "albumArtName": "LoveDive",
+        "rankNumber": 7,
+        "lastPosDiff": -3,
+        "duration": 120
+    },
+    {
+        "id": "8",
+        "title" : "Tomboy",
+        "singer" : "(G)-idle)",
+        "albumArtName": "INeverDie",
+        "rankNumber": 8,
+        "lastPosDiff": -5,
+        "duration": 120
+    },
+    {
+        "id": "9",
+        "title" : "High Off Life",
+        "singer" : "Future",
+        "albumArtName": "Future",
+        "rankNumber": 9,
+        "lastPosDiff": -3,
+        "duration": 120
+    }
+]

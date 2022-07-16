@@ -11,7 +11,7 @@ import SwiftUI
 struct The_PhonographApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AppView()
         }
     }
 }

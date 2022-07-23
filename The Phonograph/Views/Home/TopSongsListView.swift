@@ -23,7 +23,7 @@ struct TopSongsListView: View {
                 
                 ForEach(songs) { song in
                     
-                    Button(action: { toPlayerScreen(song) } ) {
+                    Button(action: { didTapSong(song) } ) {
                         TopCDView(song: song)
                     }
                     .buttonStyle(ScaleStyle())
@@ -35,6 +35,13 @@ struct TopSongsListView: View {
             
         } //: ScrollView
         .frame(height: 150)
+    }
+    
+    // MARK: - Functions
+    func didTapSong(_ song: Song) {
+        withAnimation {
+            toPlayerScreen(song)
+        }
     }
 }
 

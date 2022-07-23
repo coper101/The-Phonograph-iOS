@@ -28,6 +28,7 @@ class Utils {
         
         do {
             let decoder = JSONDecoder()
+            decoder.dateDecodingStrategy = .iso8601
             let objects = try decoder.decode(T.self, from: data)
             return objects
         } catch {

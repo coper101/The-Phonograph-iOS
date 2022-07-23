@@ -9,8 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     // MARK: - Properties
-    @EnvironmentObject var songModelData: SongModelData
-    @EnvironmentObject var appState: AppState
+    @EnvironmentObject var appState: AppViewModel
     
     // MARK: - Body
     var body: some View {
@@ -25,26 +24,32 @@ struct HomeView: View {
                     VStack(spacing: 15) {
                         HeaderView(title: "Top 10")
                         TopSongsListView(
-                            songs: songModelData.songs,
+                            songs: appState.songs,
                             toPlayerScreen: appState.toPlayerScreen
                         )
                     }
                     
                     // Row 3: RECENTLY PLAYED
-                    VStack(spacing: 15) {
-                        HeaderView(title: "Recently Played")
-                        SongsListView(
-                            songs: songModelData.sortByTitleSongs,
-                            toPlayerScreen: appState.toPlayerScreen
-                        )
+                    if !appState.recentlyPlayedSongs.isEmpty {
+                        VStack(spacing: 15) {
+                            HeaderView(title: "Recently Played")
+                            SongsListView(
+                                songs: appState.recentlyPlayedSongs,
+                                toPlayerScreen: appState.toPlayerScreen,
+                                songPlaying: appState.songPlaying,
+                                songElapseTime: Int(appState.elapseTime)
+                            )
+                        }
                     }
                     
                     // Row 4: LATEST RELEASE
                     VStack(spacing: 15) {
                         HeaderView(title: "Latest Release")
                         SongsListView(
-                            songs: songModelData.sortByTitleSongs,
-                            toPlayerScreen: appState.toPlayerScreen
+                            songs: appState.sortByReleasedDate,
+                            toPlayerScreen: appState.toPlayerScreen,
+                            songPlaying: appState.songPlaying,
+                            songElapseTime: Int(appState.elapseTime)
                         )
                     }
                     
@@ -64,21 +69,29 @@ struct HomeView: View {
                 
                 // Row 3: BOTTOM BAR PREVIEW
                 if let songPlaying = appState.songPlaying {
-                    Button(
-                        action: { appState.toPlayerScreen(song: songPlaying) }
-                    ) {
+                    Button(action: { didTapBottomBar(songPlaying: songPlaying) }) {
                         BottomBarView(
                             songPlaying: songPlaying,
-                            time: Int(appState.elapseTime).toMinSecTimeFormat()
+                            time: Int(appState.elapseTime).toMinSecTimeFormat(),
+                            playerYOffset: $appState.playerYOffset,
+                            playerHeightTranslation: $appState.playerHeightTranslation,
+                            playerIsOnDrag: $appState.playerIsOnDrag
                         )
                     }
-                }
+                } //: if
                 
             } //: VStack
              
         } //: ZStack
-        .ignoresSafeArea(.container, edges: .bottom)
     }
+    
+    // MARK: - Functions
+    func didTapBottomBar(songPlaying: Song) {
+        withAnimation() {
+            appState.toPlayerScreen(song: songPlaying)
+        }
+    }
+    
 }
 
 // MARK: - Preview
@@ -87,7 +100,6 @@ struct HomeView_Previews: PreviewProvider {
         HomeView()
             .previewLayout(.sizeThatFits)
             .background(Colors.background.color)
-            .environmentObject(SongModelData())
-            .environmentObject(AppState())
+            .environmentObject(AppViewModel())
     }
 }

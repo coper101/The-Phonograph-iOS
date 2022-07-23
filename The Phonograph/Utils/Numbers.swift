@@ -10,12 +10,11 @@ import Foundation
 extension Int {
     
     func toMinSecTimeFormat() -> String {
-        let milliSec = self * 1000
-        let date = Date(timeIntervalSince1970: TimeInterval(milliSec) / 1000)
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "mm:ss"
-        let formattedDate = dateFormatter.string(from: date)
-        return formattedDate
+        let timeInterval = TimeInterval(self)
+        let time = NSInteger(timeInterval)
+        let seconds = time % 60
+        let minutes = (time / 60) % 60
+        return String(format: "%2d:%0.2d", minutes, seconds)
     }
     
 }

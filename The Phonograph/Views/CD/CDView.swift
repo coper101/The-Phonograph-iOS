@@ -9,9 +9,13 @@ import SwiftUI
 
 struct CDView: View {
     // MARK: - Properties
+    @State var rotationAngle: Double = .zero
+
     var imageName: String? = nil
     var scale: CGFloat = 1
     var hasLinearOpacity = false
+    var isPlaying = false
+    var hasAnimation = true
 
     // MARK: - Body
     var body: some View {
@@ -52,6 +56,24 @@ struct CDView: View {
             )
             
         } //: ZStack
+        .rotationEffect(.degrees(rotationAngle))
+        .onChange(of: isPlaying) { playing in
+            guard hasAnimation else { return }
+            withAnimation(
+                playing ?
+                    .linear(duration: 4.0).repeatForever(autoreverses: false) :
+                    .default
+            ) {
+                rotationAngle = playing ? 360 : .zero
+            }
+        }
+        .onAppear {
+            // retains the animation
+            guard hasAnimation, isPlaying else { return }
+            withAnimation(.linear(duration: 4.0).repeatForever(autoreverses: false)) {
+                rotationAngle = 360
+            }
+        }
     }
 }
 

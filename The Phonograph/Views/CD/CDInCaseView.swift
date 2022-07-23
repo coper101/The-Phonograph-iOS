@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct CDInCaseView: View {
-    // MARK: - Properties
-    @State var rotationAngle: Double = .zero
-    
+    // MARK: - Properties    
     var song: Song
     var scale: CGFloat = 1
     var isOnList = true
@@ -28,26 +26,10 @@ struct CDInCaseView: View {
             // Row 1:
             CDView(
                 imageName: song.albumArtName,
-                scale: scale
+                scale: scale,
+                isPlaying: isPlaying,
+                hasAnimation: !isOnList
             )
-                .rotationEffect(.degrees(rotationAngle))
-                .animation(
-                    isPlaying ?
-                        .linear(duration: 3.0).repeatForever(autoreverses: false) :
-                        .default, value: rotationAngle
-                )
-                .onChange(of: isPlaying) { playing in
-                    if playing {
-                      rotationAngle = 360
-                    } else {
-                        rotationAngle = .zero
-                    }
-                }
-                .onAppear {
-                    if isPlaying {
-                      rotationAngle = 360
-                    }
-                }
             
             // Row 2:
             HStack(alignment: .bottom, spacing: 0) {
@@ -55,7 +37,7 @@ struct CDInCaseView: View {
                 // Col 1: PLAY OR PAUSE BUTTON
                 if isOnList {
                     PlayOrPauseButtonView(
-                        playStatus: .paused,
+                        playStatus: isPlaying ? .playing : .paused,
                         scale: scale,
                         action: action
                     )

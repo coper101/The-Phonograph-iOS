@@ -6,7 +6,9 @@
         "albumArtName": "AsItWas",
         "rankNumber": 1,
         "lastPosDiff": 2,
-        "duration": 120
+        "duration": 167,
+        "releasedDate": "2022-07-06T12:47:26+0000",
+        "lyrics": "In this world, it's just us\nYou know it's not the same as it was\nIn this world, it's just us"
     },
     {
         "id": "2",
@@ -15,16 +17,20 @@
         "albumArtName": "AboutDamnTime",
         "rankNumber": 2,
         "lastPosDiff": -1,
-        "duration": 120
+        "duration": 191,
+        "releasedDate": "2022-07-05T12:47:26+0000",
+        "lyrics": "Okay (okay), alright\nIt's about damn time (time)\nTurn up the music, let's celebrate (alright)"
     },
     {
         "id": "3",
         "title" : "Glimpe Of Us",
-        "singer" : "Future",
+        "singer" : "Joji",
         "albumArtName": "GlimpseOfUs",
         "rankNumber": 3,
         "lastPosDiff": -2,
-        "duration": 120
+        "duration": 233,
+        "releasedDate": "2022-07-04T12:47:26+0000",
+        "lyrics": "I'm only here passing time in her arms\nHoping I'll find\nA glimpse of us"
     },
     {
         "id": "4",
@@ -33,25 +39,31 @@
         "albumArtName": "LightSwitch",
         "rankNumber": 4,
         "lastPosDiff": -1,
-        "duration": 120
+        "duration": 185,
+        "releasedDate": "2022-07-06T12:47:26+0000",
+        "lyrics": "You turn me on like a light switch\nWhen you're movin' your body around and around\nNow, I don't wanna fight this (no)"
     },
     {
         "id": "5",
         "title" : "Left and Right",
-        "singer" : "Charlie Puth, Jungkook",
+        "singer" : "Charlie Puth (feat. Jungkook of BTS)",
         "albumArtName": "LeftAndRight",
         "rankNumber": 5,
         "lastPosDiff": -2,
-        "duration": 120
+        "duration": 154,
+        "releasedDate": "2022-07-12T12:47:26+0000",
+        "lyrics": "Memories follow me left and right\nI can feel you over here, I can feel you over here\nYou take up every corner of my mind"
     },
     {
         "id": "6",
-        "title" : "Hounds of Love",
+        "title" : "Hounds Of Love",
         "singer" : "Kate Bush",
         "albumArtName": "HoundsOfLove",
         "rankNumber": 6,
         "lastPosDiff": -4,
-        "duration": 120
+        "duration": 183,
+        "releasedDate": "2022-07-17T07:47:26+0000",
+        "lyrics": "From nothing real\nI just can't deal with this\nI'm still afraid to be there"
     },
     {
         "id": "7",
@@ -60,24 +72,30 @@
         "albumArtName": "LoveDive",
         "rankNumber": 7,
         "lastPosDiff": -3,
-        "duration": 120
+        "duration": 177,
+        "releasedDate": "2022-07-02T12:47:26+0000",
+        "lyrics": "Narcissistic, my god, I love it\n서로를 비춘 밤\n아름다운 까만 눈빛 더 빠져 깊이"
     },
     {
         "id": "8",
         "title" : "Tomboy",
-        "singer" : "(G)-idle)",
+        "singer" : "(G)-idle",
         "albumArtName": "INeverDie",
         "rankNumber": 8,
         "lastPosDiff": -5,
-        "duration": 120
+        "duration": 174,
+        "releasedDate": "2022-07-01T12:47:26+0000",
+        "lyrics": "Yeah, I'm fu- tomboy\n(Uh, ah, uh)\nYeah, I'll be the tomboy"
     },
     {
         "id": "9",
-        "title" : "High Off Life",
-        "singer" : "Future",
+        "title" : "Life Is Good",
+        "singer" : "Future (feat. Drake)",
         "albumArtName": "Future",
         "rankNumber": 9,
         "lastPosDiff": -3,
-        "duration": 120
+        "duration": 220,
+        "releasedDate": "2022-06-06T12:47:26+0000",
+        "lyrics": "Workin' on the weekend like usual\nWay off in the deep end like usual (like usual)\nNiggas swear they passed us, they doin' too much"
     }
 ]

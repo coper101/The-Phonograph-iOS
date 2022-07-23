@@ -16,7 +16,9 @@ struct TestData {
             albumArtName: "INeverDie",
             rankNumber: 1,
             lastPosDiff: 2,
-            duration: 120
+            duration: 120,
+            releasedDate: Date(),
+            lyrics: "line1\nline2\n"
         ),
         .init(
             id: "2",
@@ -25,7 +27,9 @@ struct TestData {
             albumArtName: "LoveDive",
             rankNumber: 1,
             lastPosDiff: 2,
-            duration: 120
+            duration: 120,
+            releasedDate: Date(),
+            lyrics: "line1\nline2\n"
         ),
         .init(
             id: "3",
@@ -34,16 +38,20 @@ struct TestData {
             albumArtName: "LeftAndRight",
             rankNumber: 1,
             lastPosDiff: 2,
-            duration: 120
+            duration: 120,
+            releasedDate: Date(),
+            lyrics: "line1\nline2\n"
         ),
         .init(
             id: "4",
-            title: "As It Was",
-            singer: "Harry Styles",
+            title: "Example Example Example Example Example Example",
+            singer: "Singer",
             albumArtName: "AsItWas",
             rankNumber: 1,
             lastPosDiff: 2,
-            duration: 120
+            duration: 120,
+            releasedDate: Date(),
+            lyrics: "line1\nline2\n"
         )
     ]
 }

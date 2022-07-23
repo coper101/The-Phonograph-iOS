@@ -15,8 +15,18 @@ struct Song: Codable, Identifiable, Equatable {
     var rankNumber: Int
     var lastPosDiff: Int
     var duration: Int // in seconds
+    var releasedDate: Date
+    var lyrics: String
     
     static func == (lhs: Song, rhs: Song) -> Bool {
        return lhs.id == rhs.id
    }
+    
+    var titleAndSingerFormat: String {
+        "\(title) - \(singer)".uppercased()
+    }
+    
+    var splitLyrics: [String] {
+        lyrics.components(separatedBy: .newlines)
+    }
 }

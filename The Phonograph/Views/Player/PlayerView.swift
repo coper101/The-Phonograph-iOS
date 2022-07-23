@@ -9,18 +9,12 @@ import SwiftUI
 
 struct PlayerView: View {
     // MARK: - Properties
-    @EnvironmentObject var appState: AppState
+    @EnvironmentObject var appState: AppViewModel
     var song: Song
-    
-    var realPlayStatus: PlayStatus {
-        // check this song is playing on background
-        guard
-            let songPlaying = appState.songPlaying,
-            appState.selectedSong == songPlaying
-        else {
-            return .paused
-        }
-        return appState.playStatus
+        
+    var playStatusMessage: String {
+        appState.getSongPlayStatus(song: song) == .playing ?
+            "Playing" : "Play"
     }
 
     // MARK: - Body
@@ -39,14 +33,13 @@ struct PlayerView: View {
                         .opacity(0.5)
                     
                     // Row 2:
-                    Text("\(song.title) - \(song.singer)".uppercased())
-                        .textStyle(size: 15, lineLimit: 1)
-                    
+                    SongMarqueeTextView(titleAndSinger: song.titleAndSingerFormat)
+            
                 } //: VStack
                 .padding(.horizontal, 48 + 15)
                               
                 // Layer 2:
-                Button(action: appState.backToHomeScreen) {
+                Button(action: didTapMinimize) {
                                         
                     Icons.minimize.image
                         .resizable()
@@ -70,7 +63,7 @@ struct PlayerView: View {
                 song: song,
                 isOnList: false,
                 time: Int(appState.elapseTime).toMinSecTimeFormat(),
-                isPlaying: realPlayStatus == .playing
+                isPlaying: appState.getSongPlayStatus(song: song) == .playing
             )
             
             Spacer()
@@ -79,15 +72,15 @@ struct PlayerView: View {
             ScrollView {
                 VStack(spacing: 12) {
                     
-                    Text("You turn me on like a light switch")
+                    Text(song.splitLyrics[0])
                         .textStyle(size: 15)
                         .opacity(0.5)
                     
-                    Text("When you're movin' your body around and around")
+                    Text(song.splitLyrics[1])
                         .textStyle(size: 18)
                         .opacity(0.9)
                     
-                    Text("You got me in a tight grip (yeah)")
+                    Text(song.splitLyrics[2])
                         .textStyle(size: 15)
                         .opacity(0.5)
 
@@ -100,23 +93,31 @@ struct PlayerView: View {
             
             // MARK: - Row 4: Play Button
             PlayOrPauseButtonView(
-                playStatus: realPlayStatus,
+                playStatus: appState.getSongPlayStatus(song: song),
                 scale: 1,
                 isOnPlayer: true,
-                action: appState.playOrPauseSong
+                action: { appState.playOrPauseSong(song: song) }
             )
             
             Spacer()
             
             // MARK: - Row 5: Model
-            Text("Playing on Model 1900")
+            Text("\(playStatusMessage) on \(appState.playerModel)")
                 .textStyle(size: 14)
                 .opacity(0.3)
-                .padding(.bottom, 21)
-            
+                .id(playStatusMessage + appState.playerModel)
+                .transition(.opacity.animation(.easeIn(duration: 0.3)))
+                .padding(.bottom, EdgeInsets().insets.top)
                         
         } //: VStack
         .fillMaxSize()
+    }
+    
+    // MARK: - Functions
+    func didTapMinimize() {
+        withAnimation(.spring()) {
+            appState.backToHomeScreen()
+        }
     }
 }
 
@@ -126,6 +127,6 @@ struct PlayerView_Previews: PreviewProvider {
         PlayerView(song: TestData.songs[0])
             .previewLayout(.sizeThatFits)
             .background(Colors.background.color)
-            .environmentObject(AppState())
+            .environmentObject(AppViewModel())
     }
 }

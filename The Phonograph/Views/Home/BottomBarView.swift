@@ -85,6 +85,7 @@ struct BottomBarView: View {
                         // Col 3: TIME PLAYED
                         Text(time)
                             .textStyle(size: 15)
+                            .opacity(0.7)
                         
                     } //: HStack
                     
